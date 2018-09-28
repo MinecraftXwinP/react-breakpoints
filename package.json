@@ -15,6 +15,7 @@
     "react"
   ],
   "scripts": {
+		"build": "npm run compile",
     "clean": "rimraf lib es",
     "compile": "npm run compile:commonjs && npm run compile:es",
     "compile:commonjs": "cross-env BABEL_ENV=commonjs babel modules --out-dir lib",
